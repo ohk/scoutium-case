@@ -23,9 +23,8 @@ class ContentDetailVM {
     
     func getDetail(){
         guard let id = id.value else { return }
-        ContentDetailEP(id: "618bf8b3935d92128d717056").execute { [weak self] data in
+        ContentDetailEP(id: id).execute { [weak self] data in
             self?.response.accept(data)
-            print("HAMID",data?.content?.headline, id)
         }
     }
 }
