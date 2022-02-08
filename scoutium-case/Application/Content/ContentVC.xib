@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContentVC" customModule="scoutium_case" customModuleProvider="target">
+            <connections>
+                <outlet property="tableviewContents" destination="fec-gW-mFq" id="7ed-LC-xWN"/>
+                <outlet property="view" destination="YuZ-Ox-i8V" id="7Vd-Qt-fHb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="YuZ-Ox-i8V">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lp6-jN-GkP">
+                    <rect key="frame" x="321" y="44" width="73" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Log out"/>
+                    <connections>
+                        <action selector="logout:" destination="-1" eventType="touchUpInside" id="N5O-AQ-iB7"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fec-gW-mFq">
+                    <rect key="frame" x="5" y="90" width="404" height="772"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8Wv-9Z-CIY"/>
+                        <outlet property="delegate" destination="-1" id="o23-zJ-cki"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="CTZ-Is-djr"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="lp6-jN-GkP" firstAttribute="top" secondItem="CTZ-Is-djr" secondAttribute="top" id="4wV-wK-pMG"/>
+                <constraint firstItem="CTZ-Is-djr" firstAttribute="trailing" secondItem="fec-gW-mFq" secondAttribute="trailing" constant="5" id="SEz-aX-Wfs"/>
+                <constraint firstItem="CTZ-Is-djr" firstAttribute="bottom" secondItem="fec-gW-mFq" secondAttribute="bottom" id="Ueg-sf-LFL"/>
+                <constraint firstItem="fec-gW-mFq" firstAttribute="leading" secondItem="CTZ-Is-djr" secondAttribute="leading" constant="5" id="kR6-wu-X01"/>
+                <constraint firstItem="CTZ-Is-djr" firstAttribute="trailing" secondItem="lp6-jN-GkP" secondAttribute="trailing" constant="20" id="vIP-mA-uEb"/>
+                <constraint firstItem="fec-gW-mFq" firstAttribute="top" secondItem="lp6-jN-GkP" secondAttribute="bottom" constant="15" id="wLr-5C-a7H"/>
+            </constraints>
+            <point key="canvasLocation" x="53.623188405797109" y="122.54464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

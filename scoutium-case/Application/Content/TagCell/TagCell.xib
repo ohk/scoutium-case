@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VSE-bW-LWc" customClass="TagCell" customModule="scoutium_case" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="73" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cut-3K-IJb">
+                <rect key="frame" x="0.0" y="0.0" width="73" height="37"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tnT-kR-WI8">
+                        <rect key="frame" x="5" y="5" width="63" height="27"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzU-7S-kzs">
+                                <rect key="frame" x="0.0" y="0.0" width="63" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="tnT-kR-WI8" secondAttribute="bottom" constant="5" id="L8d-pD-hPZ"/>
+                    <constraint firstAttribute="trailing" secondItem="tnT-kR-WI8" secondAttribute="trailing" constant="5" id="qHg-be-xSR"/>
+                    <constraint firstItem="tnT-kR-WI8" firstAttribute="top" secondItem="cut-3K-IJb" secondAttribute="top" constant="5" id="qW3-O5-TQb"/>
+                    <constraint firstItem="tnT-kR-WI8" firstAttribute="leading" secondItem="cut-3K-IJb" secondAttribute="leading" constant="5" id="wfH-cP-Bq7"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="73" height="37"/>
+            <connections>
+                <outlet property="background" destination="tnT-kR-WI8" id="Yt1-4i-Fwu"/>
+                <outlet property="tagLabel" destination="zzU-7S-kzs" id="aGX-SD-rC2"/>
+            </connections>
+            <point key="canvasLocation" x="67.391304347826093" y="101.45089285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>
